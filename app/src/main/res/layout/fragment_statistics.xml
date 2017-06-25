@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_on_statistics_activity_headline"
+        android:textSize="@dimen/size_text_headline"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.view.PagerTabStrip
+            android:id="@+id/PagerTabStrip"
+            android:textAppearance="@style/PagerTabStripText"
+            style="@style/PagerTabStripText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"/>
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

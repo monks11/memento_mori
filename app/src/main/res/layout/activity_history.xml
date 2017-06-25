@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/logoHistoryAcvtivity"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/logo"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/timeViewHistoryActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/timer"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/heartbeatsViewHistoryActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timeViewHistoryActivity"
+            android:layout_centerHorizontal="true"
+            android:text="@string/heartbeats_to_win"
+            android:textColor="#000000"
+            android:textSize="35sp"
+            android:textStyle="bold"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChartHistoryActivity"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center">
+
+            </com.github.mikephil.charting.charts.PieChart>
+
+            <!--<ImageView-->
+            <!--android:id="@+id/imageViewHeart"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_gravity="center" />-->
+            <ImageView
+                android:id="@+id/imageViewHeartHistoryActivity"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logoHistoryAcvtivity"
+            android:layout_centerHorizontal="true"
+            android:text="@string/text_on_history_activity_headline"
+            android:textSize="@dimen/size_text_headline"/>
+
+
+</RelativeLayout >

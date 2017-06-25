@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:textSize="45sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_birthday_text"
+        android:gravity="center"/>
+
+    <DatePicker
+        android:id="@+id/date_picker"
+        android:textSize="@dimen/size_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"></DatePicker>
+
+    <Button
+        android:id="@+id/buttonGetBirthdayActivity"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="33dp"
+        android:text="Say"
+        android:textAllCaps="false"
+        android:textSize="20sp"/>
+
+</LinearLayout>

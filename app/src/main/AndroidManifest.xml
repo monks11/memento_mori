@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.monks.memento_mori">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+        android:name=".StartApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/circle_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="sensorPortrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.FirstRunNameActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.FirstRunBirthdayActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.HistoryActivity"
+            android:screenOrientation="sensorPortrait" />
+
+        <service
+            android:name=".service.TimeHeartbeatsManagerService"
+            android:process=":TimeHeartbeatsManagerService">
+        </service>
+
+        <receiver android:name=".recivers.OnLoadBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:authorities="com.monks.memento_mori.providers.AppSettingsContentProvider.jC9MaHGkTy"
+            android:name=".providers.AppSettingsContentProvider"
+            android:exported="false"/>
+
+    </application>
+
+</manifest>

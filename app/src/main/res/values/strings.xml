@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Memento Mori</string>
+    <string name="hello_text">Hello, wanderer. Let\'s start?\nFirst of all, enter your name.\nDon\'t panic. It\'s simple. Try it!</string>
+    <string name="hello_hint_text">your name will entered here</string>
+    <string name="hello_birthday_text">Enter your date of birth…</string>
+    <string name="hello_welcome_text">You are welcome!\n
+From now on, you are in the game. \nYou have three hours.
+At the end of time you will lose. But you can replenish your time with the help of other players or NOT using your phone.\n
+Yes, yes, this is the game you need to play without a phone.
+I hope you understand what you need to do to win and…\n memento mori.</string>
+    <string name="timer">00:00:00</string>
+    <string name="heartbeats_to_win">1 757 263</string>
+    <string name="text_on_main_activities">Heartbeats to victory:</string>
+    <string name="text_on_info_activity_headline">Info</string>
+    <string name="text_on_info_activity_text">This is a game - an experiment.\nWe want to help people who are dependent on their smartphones.\n The goal of the game is to hold out for 25 day 4 hr. 48 min.. This is not a random value. This is one thousandth of the average life expectancy of a person. You have to accelerate "live" your life, "earning" your time. I hope you will learn to appreciate your time and the time of others.   And… memento mori.</string>
+    <string name="text_on_share_time_activity_headline">Share time</string>
+    <string name="text_on_get_time_activity_headline">Get time</string>
+    <string name="text_on_statistics_activity_headline">Statistics</string>
+    <string name="text_on_history_activity_headline">History</string>
+
+</resources>
